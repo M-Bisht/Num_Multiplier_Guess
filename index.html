@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="steaksContainer">
+      <div class="win"><span>Win: </span><span id="winNum">0</span></div>
+      <div class="loss"><span>Loss: </span><span id="lossNum">0</span></div>
+      <div class="overall">
+        <span>Profit: </span><span id="overallNum">0</span>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="settingContainer">
+        <div>
+          <label for="betAmount">Bet Amount</label>
+          <input type="number" id="betAmount" value="0" />
+          <label for="targetNumber">TargetNumber</label>
+          <input type="number" id="targetNumber" value="1" />
+          <button id="betButton">Bet</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="resultContainer">
+        <span id="numberMultiplier">1.00</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

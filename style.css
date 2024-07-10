@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f212e;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100rem;
+  height: 55rem;
+  border: 1px solid #2f4553;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.settingContainer {
+  width: 35rem;
+  height: 100%;
+  padding: 1rem;
+  background-color: #213743;
+}
+
+.settingContainer > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.settingContainer > div > label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b1bad3;
+}
+
+.settingContainer > div > input {
+  height: 4rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  background-color: #0f212e;
+  border: 2px solid #2f4553;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.settingContainer > div > label:nth-child(3) {
+  margin-top: 1.5rem;
+}
+
+.settingContainer > div > button {
+  height: 5rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #00e701;
+  border: none;
+  border-radius: 5px;
+}
+
+.resultContainer {
+  width: 65rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultContainer > span {
+  font-size: 15rem;
+  color: white;
+  font-weight: bold;
+}
+
+.steaksContainer {
+  width: 100rem;
+  height: 6rem;
+  background-color: #041924;
+  border: 1px solid #2f4553;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.steaksContainer span {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.win > span {
+  color: #00e701;
+}
+
+.loss > span {
+  color: rgb(255, 0, 0);
+}
+
+.overall {
+  color: white;
+}
+
+@media (width < 1031px) {
+  .container,
+  .steaksContainer {
+    width: 80rem;
+  }
+}
+
+@media (width < 831px) {
+  .container,
+  .steaksContainer {
+    width: 70rem;
+  }
+}
+
+@media (width < 731px) {
+  body {
+    padding: 2rem;
+  }
+
+  .container,
+  .steaksContainer {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .resultContainer,
+  .settingContainer {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (width < 401px) {
+  .resultContainer > span {
+    font-size: 10rem;
+  }
+}
+
+@media (width < 301px) {
+  .resultContainer > span {
+    font-size: 35vw;
+  }
+
+  .steaksContainer {
+    height: auto;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
