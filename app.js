@@ -22,7 +22,7 @@ betButton.addEventListener("click", () => {
   const targetNumValue = targetNumberInp.value;
 
   // Determine win or loss based on the random number and target number
-  if (randomNumber <= targetNumValue) {
+  if (randomNumber < targetNumValue) {
     loss++;
     lossNum.innerText = loss;
     overall -= betValue;
